@@ -1,0 +1,83 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+}
+
+ul {
+  list-style-position: inside;
+  line-height: 1.875em;
+}
+
+.button-style a {
+  display: inline-block;
+  color: black;
+  background: white;
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 12.5px 20px;
+}
+
+/* Projects */
+.project .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 60vh;
+  max-width: 100%;
+}
+
+.project .description {
+  padding: 2rem;
+}
+
+.project .name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.project .name.date {
+  font-size: 2rem;
+}
+
+@media all and (max-width: 767px) {
+  .project .area {
+    width: 180px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .project {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 4rem;
+  }
+
+  .project .col {
+    flex: 1 1 50%;
+  }
+
+  .project .description {
+    padding: 5rem;
+  }
+
+  .project .name {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.35em;
+  }
+}

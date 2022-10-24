@@ -1,265 +1,289 @@
- *,
- *:before,
- *:after {
-     box-sizing: border-box;
-     font-size: 14px;
-     font-family: 'Poppins', sans-serif;
-     font-weight: normal;
-     padding: 0;
- }
- 
- body {
-     margin: 0;
-     padding: 0;
-     background: #000;
-     color: #fff;
- }
- 
- ul {
-     list-style-position: inside;
- }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  padding: 0;
+}
 
- /*Footer*/
- 
- footer .footer {
-     text-align: center;
-     padding: 1.5rem;
-     font-size: 14px;
- }
- /*hero-container*/
- 
- #hero.container {
-     background-image: url('/assets/fc45ad_4b6a42c62afb4389b11e4f3c0b7890db_mv2.webp');
-     background-size: cover;
- }
- 
- #hero.container .col {
-     background: #00000055;
-     padding: 10rem 2.5rem 3rem;
- }
- 
- #hero.container .headline {
-     font-size: 4rem;
-     font-weight: 600;
-     line-height: 1.25em;
-     word-wrap: break-word;
- }
- 
- #hero.container .title {
-     font-size: 1.4rem;
-     font-weight: 300;
-     line-height: 1.5em;
-     padding: 1rem 0;
- }
- 
- #hero.container .intro {
-     font-size: 1rem;
-     font-weight: 300;
-     line-height: 2rem;
-     margin-bottom: 2rem;
- }
- 
- #hero.container .action {
-     font-size: 1rem;
-     font-weight: 300;
-     line-height: 2rem;
- }
- 
- #projects.container {
-     padding: 0 2.5rem;
- }
- 
- #projects .subtitle {
-     font-size: 3.2rem;
-     font-weight: 600;
-     text-align: center;
- }
- 
- #projects .description {
-     padding: 1rem 3rem 4rem;
- }
- 
- #projects .name {
-     font-size: 1.2rem;
-     font-weight: 600;
- }
- 
- #projects .area ul li {
-     font-size: 1rem;
-     font-weight: 300;
-     line-height: 2rem;
- }
- 
- #projects img {
-     width: 100%;
-     display: block;
- }
- 
- #personal.container {
-     background-image: url('/assets/VR-underwater-world-01.webp');
-     background-size: 100%;
- }
- 
- #personal.container {
-     background-image: url('/assets/fc45ad_08ea06e7a3344a76b9603636c7a9e0c6_mv2.webp');
-     background-size: 100%;
- }
- 
- #personal.container .row {
-     background: #00000055;
-     padding: 12rem 2.5rem;
- }
- 
- #personal.container .title {
-     font-size: 2.5rem;
-     font-weight: 600;
-     line-height: 3rem;
-     margin-bottom: 2rem;
- }
- 
- #personal.container .description {
-     font-size: 1rem;
- }
- 
- #contact form {
-     width: 100%;
- }
- 
- #contact form input,
- #contact form textarea {
-     width: 100%;
-     background: transparent;
-     font-size: 1.2rem;
-     color: #fff;
- }
- 
- #contact form button {
-     width: 100%;
-     border: none;
-     background: white;
-     padding: 1rem;
-     cursor: pointer;
- }
- 
- #contact form button:hover {
-     background: #cccccc;
- }
- 
- #contact.container .row .contact-form {
-     padding: 8rem 8vw;
- }
- 
- #contact.container .contact-form .title {
-     font-size: 3.2rem;
-     font-weight: 600;
-     line-height: 1em;
- }
- 
- #contact.container .contact-form .description {
-     font-size: 1rem;
-     padding: 2rem 0;
- }
- 
- #contact.container .contact-form form input,
- #contact.container .contact-form form textarea {
-     font-size: 1rem;
-     margin-bottom: 1rem;
-     padding: 0.5rem;
-     border: 1px solid transparent;
-     border-bottom: 1px solid white;
- }
- 
- #contact.container .contact-form form input:hover,
- #contact.container .contact-form form textarea:hover {
-     border: 1px solid white !important;
- }
- 
- #contact.container .contact-form form input[type="submit"] {
-     width: 100%;
- }
- 
- @media all and (min-width: 768px) {
-     #projects img {
-         display: none;
-     }
-     #projects .project .col.image {
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-position: center;
-     }
-     #projects.container {
-         padding: 0;
-     }
-     #projects .project {
-         display: flex;
-         min-height: 560px;
-     }
-     #projects .image {
-         flex: 1 1 65%;
-     }
-     #projects .description {
-         flex: 0 0 35%;
-         padding: 8rem 8vw;
-         min-height: 22rem;
-         display: flex;
-         flex-flow: row wrap;
-         place-content: center flex-start;
-     }
-     #projects .project:nth-child(even) .col.image {
-         order: 2;
-     }
-     #hero.container {
-         display: flex;
-         justify-content: flex-end;
-         height: 60rem;
-     }
-     #hero.container .col {
-         flex-basis: 50%;
-         padding: 8rem 12vw;
-     }
-     #hero.container .headline {
-         font-size: 6rem;
-         font-weight: 600;
-         line-height: 1.25em;
-         word-wrap: break-word;
-     }
-     #personal.container .row {
-         padding: 15rem 2.5rem;
-     }
-     #personal.container .col {
-         width: 40%;
-         min-width: 500px;
-         margin: 0 auto;
-     }
-     #personal.container .title {
-         font-size: 4.5rem;
-         font-weight: 600;
-         line-height: 1em;
-         margin-bottom: 2rem;
-     }
-     #contact.container .row {
-         display: flex;
-     }
-     #contact.container .row .col {
-         flex: 1 1 50%;
-     }
-     #projects .project.item-01 .col.image {
-         background-image: url('/assets/VR-underwater-world-01.webp');
-     }
-     #projects .project.item-02 .col.image {
-         background-image: url('/assets/skating-instructional-01.webp');
-     }
-     #projects .project.item-03 .col.image {
-         background-image: url('/assets/TSAR-01.webp');
-     }
-     #projects .project.item-04 .col.image {
-         background-image: url('/assets/AR-application-01.webp');
-     }
-     #projects .project.item-05 .col.image {
-         background-image: url('/assets/Hand-in-Hand-01.webp');
-         background-position: left;
-     }
-     #projects .project.item-06 .col.image {
-         background-image: url('/assets/striving-and-transforming-01.webp');
-     }
- }
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.button-style a {
+  display: inline-block;
+  color: black;
+  background: white;
+  border-radius: 100px;
+  text-decoration: none;
+  padding: 12.5px 20px;
+}
+
+/*Footer*/
+
+footer .footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 14px;
+}
+/*hero-container*/
+
+#hero.container {
+  background-image: url("/assets/fc45ad_4b6a42c62afb4389b11e4f3c0b7890db_mv2.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#hero.container .col {
+  background: #25252555;
+  padding: 10rem 2.5rem 3rem;
+}
+
+#hero.container .headline {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.25em;
+  word-wrap: break-word;
+}
+
+#hero.container .title {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5em;
+  padding: 1rem 0;
+}
+
+#hero.container .intro {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+#hero.container .action {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+#projects.container {
+  padding: 0 2.5rem;
+}
+
+#projects .subtitle {
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#projects .description {
+  padding: 1rem 3rem 4rem;
+}
+
+#projects .name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#projects .area ul li {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+#projects img {
+  width: 100%;
+  display: block;
+}
+
+#personal.container {
+  background-image: url("/assets/VR-underwater-world-01.webp");
+  background-size: 100%;
+}
+
+#personal.container {
+  background-image: url("/assets/fc45ad_08ea06e7a3344a76b9603636c7a9e0c6_mv2.webp");
+  background-size: 100%;
+}
+
+#personal.container .row {
+  background: #00000055;
+  padding: 12rem 2.5rem;
+}
+
+#personal.container .title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+#personal.container .description {
+  font-size: 1rem;
+}
+#contact .col.image img {
+  /* display: block;
+    /* object-fit: cover; */
+  /*max-width: 100%;
+    max-height: 100%;
+    object-position: right center; */
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+#contact form {
+  width: 100%;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  background: transparent;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+#contact form button {
+  width: 100%;
+  border: none;
+  background: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background: #cccccc;
+}
+
+#contact.container .row .contact-form {
+  padding: 8rem 8vw;
+}
+
+#contact.container .contact-form .title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+#contact.container .contact-form .description {
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+
+#contact.container .contact-form form input,
+#contact.container .contact-form form textarea {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  border-bottom: 1px solid white;
+}
+
+#contact.container .contact-form form input:hover,
+#contact.container .contact-form form textarea:hover {
+  border: 1px solid white !important;
+}
+
+#contact.container .contact-form form input[type="submit"] {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  #projects img {
+    display: none;
+  }
+  #projects .project .col.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #projects.container {
+    padding: 0;
+  }
+  #projects .project {
+    display: flex;
+    min-height: 560px;
+  }
+  #projects .image {
+    flex: 1 1 65%;
+  }
+  #projects .description {
+    flex: 0 0 35%;
+    padding: 8rem 8vw;
+    min-height: 22rem;
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: center center;
+  }
+
+  #projects .project:nth-child(odd) .col.image {
+    order: 2;
+  }
+  #hero.container {
+    display: flex;
+    justify-content: flex-end;
+    height: 60rem;
+  }
+  #hero.container .col {
+    flex-basis: 50%;
+    padding: 8rem 12vw;
+  }
+  #hero.container .headline {
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 1.25em;
+    word-wrap: break-word;
+  }
+  #personal.container .row {
+    padding: 15rem 2.5rem;
+  }
+  #personal.container .col {
+    width: 40%;
+    min-width: 500px;
+    margin: 0 auto;
+  }
+  #personal.container .title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1em;
+    margin-bottom: 2rem;
+  }
+  #contact.container .row {
+    display: flex;
+  }
+  #contact.container .row .col {
+    flex: 1 1 50%;
+  }
+
+  #projects .project.item-01 .col.image {
+    background-image: url("/assets/VR-underwater-world-01.webp");
+  }
+  #projects .project.item-02 .col.image {
+    background-image: url("/assets/skating-instructional-01.webp");
+  }
+  #projects .project.item-03 .col.image {
+    background-image: url("/assets/TSAR-01.webp");
+  }
+  #projects .project.item-04 .col.image {
+    background-image: url("/assets/AR-application-01.webp");
+  }
+  #projects .project.item-05 .col.image {
+    background-image: url("/assets/Hand-in-Hand-01.webp");
+    background-position: left;
+  }
+  #projects .project.item-06 .col.image {
+    background-image: url("/assets/striving-and-transforming-01.webp");
+  }
+  #projects .project.item-07 .col.image {
+    background-image: url("/assets/vr-cookin-game-01.webp");
+  }
+}
